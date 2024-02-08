@@ -17,7 +17,7 @@
 
 static void print_samples(uint32_t *samples, size_t num_samples)
 {
-  // printf("=== LEFT CHANNEL SAMPLES =============\n");
+  // left channel only
   for (size_t i = 0; i < num_samples; i += 2) {
     printf("%d\n", (int16_t) ((samples[i] >> 15) & 0xffff));
   }
